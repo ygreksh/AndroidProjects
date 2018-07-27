@@ -19,14 +19,16 @@ public class MySunPosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my_sun_pos);
         EditText editTextLatitude = (EditText) findViewById(R.id.editTextLatitude);
         EditText editTextLongitude = (EditText) findViewById(R.id.editTextLongitude);
+        EditText editTextTimeZone = (EditText) findViewById(R.id.editTextTimeZone);
         TextView textViewSunAzimuth = (TextView) findViewById(R.id.textViewSunAzimuth);
         TextView textViewSunAltitude = (TextView) findViewById(R.id.textViewSunAltitude);
         TextView textViewMoonAzimuth = (TextView) findViewById(R.id.textViewMoonAzimuth);
         TextView textViewMoonAltitude = (TextView) findViewById(R.id.textViewMoonAltitude);
         TextView textViewDate = (TextView) findViewById(R.id.textViewDate);
 
-        editTextLatitude.setText("46.84");
-        editTextLongitude.setText("29.63");
+        editTextLatitude.setText("46.8445");
+        editTextLongitude.setText("29.671");
+        editTextTimeZone.setText("3");
 
         textViewSunAzimuth.setText("empty");
         textViewSunAltitude.setText("empty");
@@ -45,6 +47,7 @@ public class MySunPosActivity extends AppCompatActivity {
     public void onClickCalc(View view){
         EditText editTextLatitude = (EditText) findViewById(R.id.editTextLatitude);
         EditText editTextLongitude = (EditText) findViewById(R.id.editTextLongitude);
+        EditText editTexttimeZone = (EditText) findViewById(R.id.editTextTimeZone);
         TextView textViewSunAzimuth = (TextView) findViewById(R.id.textViewSunAzimuth);
         TextView textViewSunAltitude = (TextView) findViewById(R.id.textViewSunAltitude);
         TextView textViewMoonAzimuth = (TextView) findViewById(R.id.textViewMoonAzimuth);
@@ -54,11 +57,12 @@ public class MySunPosActivity extends AppCompatActivity {
 
         double lat = Double.parseDouble(editTextLatitude.getText().toString());
         double lng = Double.parseDouble(editTextLongitude.getText().toString());
+        int tz = Integer.parseInt(editTexttimeZone.getText().toString());
         Date date = new Date();
         Calendar calendar = GregorianCalendar.getInstance();
         //calendar.setTimeZone((TimeZone.getTimeZone("+2")));
         //calendar.add(Calendar.HOUR,2);
-        Astronomy.CalculateSunPosition(calendar,lat,lng);
+        Astronomy.CalculateSunPosition(calendar,lat,lng,tz);
         Astronomy.CalculateMoonPosition(calendar,lat,lng);
 
         //Sun Position

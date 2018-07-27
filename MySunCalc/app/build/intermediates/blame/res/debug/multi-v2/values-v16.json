@@ -4,7 +4,7 @@
             "outputFile": "E:\\Ygrek\\AndroidProjects\\MySunCalc\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ygrek\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\ddefafc51db045e338882aa3b2dd9525\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\ygrek\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\8fee7e03e3812e79b16937b4f16f573a\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ygrek\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\3ef6103f5411c4eb350e1e2d23474270\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\ygrek\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\11afcbaa6beccf08874a2af9f15c70a3\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

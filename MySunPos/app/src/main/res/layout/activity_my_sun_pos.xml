@@ -27,11 +27,18 @@
             android:ems="10"
             android:inputType="numberDecimal" />
 
+        <EditText
+            android:id="@+id/editTextTimeZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
         <TextView
             android:id="@+id/textViewSunAzimuth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="TextView1" />
 
         <TextView
             android:id="@+id/textViewSunAltitude"

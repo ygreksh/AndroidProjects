@@ -4,7 +4,7 @@
             "outputFile": "E:\\Ygrek\\AndroidProjects\\MySunCalc\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ygrek\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\ddefafc51db045e338882aa3b2dd9525\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\ygrek\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\8fee7e03e3812e79b16937b4f16f573a\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

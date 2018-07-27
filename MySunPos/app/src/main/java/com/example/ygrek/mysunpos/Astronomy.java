@@ -13,6 +13,7 @@ public class Astronomy {
     public static double sunaltitude;
     public static double moonazimuth;
     public static double moonelevation;
+    //public static int localTimeZone;
     // Широта и долгота на входе в градусах, азимут и высота на выходе в радианах.
     public static void CalculateMoonPosition(Calendar dateTime, double latitude, double longitude)
     {
@@ -136,11 +137,13 @@ public class Astronomy {
     }
 
     // Широта и долгота на входе в градусах, азимут и высота на выходе в радианах.
-    public static void CalculateSunPosition(Calendar dateTime, double latitude, double longitude)
+    public static void CalculateSunPosition(Calendar dateTime, double latitude, double longitude, int timeZone)
     {
         // Convert to UTC
         //dateTime = dateTime.ToUniversalTime();
 
+        //добавление часового пояса
+        dateTime.add(Calendar.HOUR, -timeZone);
         // Number of days from J2000.0.
         double julianDate = 367 * dateTime.get(Calendar.YEAR) - (int)((7.0 / 4.0) * (dateTime.get(Calendar.YEAR) + (int)((dateTime.get(Calendar.MONTH) + 9.0) / 12.0)))
                 + (int)((275.0 * dateTime.get(Calendar.MONTH)) / 9.0) + dateTime.get(Calendar.DAY_OF_MONTH) - 730531.5;
